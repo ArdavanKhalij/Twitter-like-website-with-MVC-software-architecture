@@ -1,0 +1,52 @@
+@()
+
+@main("Home") {
+  <div class="header">
+    <a href="#default" class="logo">Assignment 2</a>
+    <div class="header-right">
+      <a href="#contact">Explore</a>
+      <a href="#contact">Share a thought</a>
+      <a href="#contact">Profile</a>
+      <a href="#contact">Logout</a>
+    </div>
+  </div>
+  <div>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Search</button>
+      <div id="myDropdown" class="dropdown-content">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+        <a href="#about">About</a>
+        <a href="#base">Base</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+        <a href="#custom">Custom</a>
+        <a href="#support">Support</a>
+        <a href="#tools">Tools</a>
+      </div>
+    </div>
+    <div class="custom-select" style="width:200px;">
+      <select>
+        <option value="0">Sorting based on:</option>
+        <option value="1">Dates</option>
+        <option value="2">Likes</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Dec 7, 2017</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Some text..</p>
+      </div>
+      <div class="card">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Sep 2, 2017</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Some text..</p>
+      </div>
+    </div>
+  </div>
+}
+
