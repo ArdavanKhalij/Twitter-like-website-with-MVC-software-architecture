@@ -1,52 +1,36 @@
 @()
 
-@main("Home") {
-  <div class="header">
-    <a href="#default" class="logo">Assignment 2</a>
-    <div class="header-right">
-      <a href="#contact">Explore</a>
-      <a href="#contact">Share a thought</a>
-      <a href="#contact">Profile</a>
-      <a href="#contact">Logout</a>
-    </div>
-  </div>
+@main("login") {
   <div>
-    <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">Search</button>
-      <div id="myDropdown" class="dropdown-content">
-        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-        <a href="#about">About</a>
-        <a href="#base">Base</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
-        <a href="#custom">Custom</a>
-        <a href="#support">Support</a>
-        <a href="#tools">Tools</a>
+    <form method="get" action="validateLogin">
+      <div class="container">
+        <h1>Login</h1>
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+
+        <button type="submit">Login</button>
       </div>
-    </div>
-    <div class="custom-select" style="width:200px;">
-      <select>
-        <option value="0">Sorting based on:</option>
-        <option value="1">Dates</option>
-        <option value="2">Likes</option>
-      </select>
-    </div>
+    </form>
   </div>
-  <div class="row">
-    <div class="leftcolumn">
-      <div class="card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Dec 7, 2017</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
+  <h1>OR</h1>
+  <div>
+    <form method="get" action="createUser">
+      <div class="container">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter username" name="username" required>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+
+        <button type="submit" class="signupbtn">Sign Up</button>
       </div>
-      <div class="card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Sep 2, 2017</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-      </div>
-    </div>
+    </form>
   </div>
 }
 
