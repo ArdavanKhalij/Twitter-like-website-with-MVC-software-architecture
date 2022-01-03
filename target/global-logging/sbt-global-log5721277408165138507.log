@@ -1,0 +1,35 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[31merror[0m] [0m[0makka.stream.impl.io.ConnectionSourceStage$$anon$1$$anon$2: Bind failed because of java.net.BindException: [/0.0.0.0:9000] Address already in use[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: java.net.BindException: [/0.0.0.0:9000] Address already in use[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.Net.bind0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.Net.bind(Net.java:469)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.Net.bind(Net.java:458)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:220)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.io.TcpListener.liftedTree1$1(TcpListener.scala:60)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.io.TcpListener.<init>(TcpListener.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.util.Reflect$.instantiate(Reflect.scala:73)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.actor.ArgsReflectConstructor.produce(IndirectActorProducer.scala:101)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.actor.Props.newActor(Props.scala:226)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.actor.ActorCell.newActor(ActorCell.scala:616)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.actor.ActorCell.create(ActorCell.scala:643)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:514)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:536)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:295)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.dispatch.Mailbox.run(Mailbox.scala:230)[0m
+[0m[[0m[31merror[0m] [0m[0m	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrun[0m) java.lang.reflect.InvocationTargetException[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 3 s, completed Dec 29, 2021, 11:22:48 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

@@ -1,0 +1,54 @@
+@(comments: List[post], searchbar: List[String])(implicit flash : Flash, request: RequestHeader)
+
+<!--(searchbar: ListBuffer[String])-->
+@main("comments") {
+<div class="header">
+  <a href="#default" class="logo">Comments</a>
+  <div class="header-right">
+    <a href="home">Home</a>
+    <a href="Explore">Explore</a>
+    <a href="goTosharingPage">Share a thought</a>
+    <a href="@routes.HomeController.MyProfile(request.session.get("username").toList(0))">Profile</a>
+    <a href=logout>Logout</a>
+  </div>
+</div>
+<body>
+<div>
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Search</button>
+    <div id="myDropdown" class="dropdown-content">
+      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+      @for(si <- searchbar){
+      <a href="@routes.HomeController.Profile(si)">@si</a>
+      }
+    </div>
+  </div>
+  <div class="custom-select" style="width:200px;">
+    <select>
+      <option value="0">Dates</option>
+      <option value="1">Dates</option>
+      <option value="2">Likes</option>
+    </select>
+  </div>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    @for(post <- comments){
+    <div class="card">
+      <a href="@routes.HomeController.Profile(post.username)"><h2>@post.username</h2></a>
+      <h5>@post.date</h5>
+      @if(post.img != "NO IMAGE"){
+      <div class="fakeimg"><img src="@routes.Assets.versioned("images/"+post.img)" style="height:200px;"></div>
+      }
+      <p>@post.text</p>
+      <h5>@post.hashtag</h5>
+      @if(request.session.get("username").toList(0) == post.username){
+      <a href = "@routes.HomeController.removePost(post.id.toString)"><h5>remove</h5></a>
+      }
+    </div>
+    }
+    <a href="@routes.HomeController.goTosharingPageComment"><h3>Add comment</h3></a>
+  </div>
+</div>
+</body>
+}

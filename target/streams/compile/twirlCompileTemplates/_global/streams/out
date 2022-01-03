@@ -1,0 +1,3 @@
+[0m[[0m[31merror[0m] [0m[0m[Error] /Users/ardavan.akhalij/play-scala-seed/app/views/comments.scala.html:49[0m
+[0m[[0m[31merror[0m] [0m[0m}: Expected '"' but found 'EOF'[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mtwirlCompileTemplates[0m) Twirl compilation failed[0m

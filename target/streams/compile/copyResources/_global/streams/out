@@ -1,0 +1,5 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/ardavan.akhalij/play-scala-seed/conf/logback.xml,/Users/ardavan.akhalij/play-scala-seed/target/scala-2.13/classes/logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/ardavan.akhalij/play-scala-seed/conf/messages,/Users/ardavan.akhalij/play-scala-seed/target/scala-2.13/classes/messages)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/ardavan.akhalij/play-scala-seed/conf/application.conf,/Users/ardavan.akhalij/play-scala-seed/target/scala-2.13/classes/application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/ardavan.akhalij/play-scala-seed/conf/routes,/Users/ardavan.akhalij/play-scala-seed/target/scala-2.13/classes/routes)[0m
