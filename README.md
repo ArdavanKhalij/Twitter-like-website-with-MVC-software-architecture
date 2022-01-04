@@ -8,6 +8,7 @@ Models: User and post are two scala files in this folder. Users contain the user
 and it creates a new user based on that information.
 3. Remove user: it receives a user from the controller file and deletes it from
 the users.
+</br>
 The other file in this folder is posted. Post contains a case class of posts. Each post has an id, username, date, text, comments (includes the id of posts that are comments of this post), likes (number of likes), share(number of shares), hashtag, commentOrNot( is this post comment or post because comments don't have a share, and comment ability), and img that contains the potential image the user wants to share.</br></br>
 Post also contains some functions:
 1. findAllSortedByDate
