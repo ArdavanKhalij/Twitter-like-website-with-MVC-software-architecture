@@ -1,8 +1,9 @@
 # Twitter-like-website-with-MVC-software-architecture
 This project contains all the requirements mentioned in the project file. In addition, it has several parts that I will explain.</br>
-### Controllers:
+# Controllers:
 I only used one controller file to the right all the needed functionalities in this part. HomeController.scala contains all the functions for redirection between the HTML pages and the functionalities such as like, follow, search, comment, and ... </br>
-Models: User and post are two scala files in this folder. Users contain the username, password, and a list of usernames as friends. User also includes some functions:</br>
+# Models: 
+User and post are two scala files in this folder. Users contain the username, password, and a list of usernames as friends. User also includes some functions:</br>
 1. findallUsers: gives us a list of all users with their information.
 2. createUser: we give this function some information from the controller,
 and it creates a new user based on that information.
@@ -20,9 +21,9 @@ Post also contains some functions:
 7. createPost
 8. RemovePost
 Comments and posts are the same, and the difference is in the controller part and the different functions.</br>
-### Views:
+# Views:
 contains the HTML files. I tried to make it as similar to your template, as much as possible.</br>
-### Functions in the controller:
+# Functions in the controller:
 1. login: The index.html file in my project is the signup and login page. So
 access to the other pages needs a username or password. There is also widespread use of sessions in this project to prevent that—this function, Leeds the index file.
 2. home: This function loads the project's home page that contains all the posts, the header with the buttons, and the search bar. I couldn't find a way in HTML to change the sorting of the posts, but the scala code is available in the models.
