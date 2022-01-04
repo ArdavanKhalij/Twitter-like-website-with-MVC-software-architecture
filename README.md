@@ -1,5 +1,5 @@
 # Twitter-like-website-with-MVC-software-architecture
-### This project is the first assignment of software architecture in Vrije Universiteit Brussel, and it is under the supervision of Dr. Coen De Roover, Mr. Camilo Velazquez, and Mr. Ahmed Zerouali.
+### This project is the second assignment of software architecture in Vrije Universiteit Brussel, and it is under the supervision of Dr. Coen De Roover, Mr. Camilo Velazquez, and Mr. Ahmed Zerouali.
 
 This project contains all the requirements mentioned in the project file. In addition, it has several parts that I will explain.</br>
 ## Controllers:
